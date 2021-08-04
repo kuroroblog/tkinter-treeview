@@ -63,26 +63,26 @@ class Application(tk.Frame):
         # open option : 子要素のアイテムを展開して表示するのかどうか。True : 子要素のアイテムを展開して表示する, False : 子要素のアイテムを展開して表示しない、デフォルト。
         # value option : データ列へ表示する値を設定。
         # 戻り値 : アイテムID
-        itemId = self.treeview.insert("", tk.END, text="itemA", open=True, values=("data1a", "data1b", "data1c"))
+        itemAId = self.treeview.insert("", tk.END, text="itemA", open=True, values=("data1a", "data1b", "data1c"))
         # 第一引数 : 階層化する場合、親要素のアイテムIDを指定。階層化しない場合、""を指定する。
         # 第二引数 : どのindex(アイテム位置)へアイテムを挿入するのか指定する。tk.END : index(アイテムの最終位置)
         # text option : 階層列へ表示するアイテムの名前を設定。
         # open option : 子要素のアイテムを展開して表示するのかどうか。True : 子要素のアイテムを展開して表示する, False : 子要素のアイテムを展開して表示しない、デフォルト。
         # value option : データ列へ表示する値を設定。
         # 戻り値 : アイテムID
-        itemId = self.treeview.insert(itemId, tk.END, text="itemB", open=True, values=("data2a", "data2b", "data2c"))
+        itemBId = self.treeview.insert(itemAId, tk.END, text="itemB", open=True, values=("data2a", "data2b", "data2c"))
         # 第一引数 : 階層化する場合、親要素のアイテムIDを指定。階層化しない場合、""を指定する。
         # 第二引数 : どのindex(アイテム位置)へアイテムを挿入するのか指定する。tk.END : index(アイテムの最終位置)
         # text option : 階層列へ表示するアイテムの名前を設定。
         # value option : データ列へ表示する値を設定。
         # 戻り値 : アイテムID
-        itemId = self.treeview.insert(itemId, tk.END, text="itemC", values=("data3a", "data3b", "data3c"))
+        itemCId = self.treeview.insert(itemBId, tk.END, text="itemC", values=("data3a", "data3b", "data3c"))
         # 第一引数 : 階層化する場合、親要素のアイテムIDを指定。階層化しない場合、""を指定する。
         # 第二引数 : どのindex(アイテム位置)へアイテムを挿入するのか指定する。tk.END : index(アイテムの最終位置)
         # text option : 階層列へ表示するアイテムの名前を設定。
         # value option : データ列へ表示する値を設定。
         # 戻り値 : アイテムID
-        itemId = self.treeview.insert("", tk.END, text="itemD", values=("data4a", "data4b", "data4c"))
+        itemDId = self.treeview.insert("", tk.END, text="itemD", values=("data4a", "data4b", "data4c"))
         #############################################
 
         # frame Widget(Frame)を親要素とした場合に、treeview Widgetをどのように配置するのか?
