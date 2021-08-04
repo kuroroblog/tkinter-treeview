@@ -26,7 +26,7 @@ class Application(tk.Frame):
         self.treeview = ttk.Treeview(frame, columns=["colA", "colB", "colC"])
 
         #############################################
-        # <各列のオプション設定>
+        # <各列に対してオプション設定>
         # #0 : 階層列(ツリーカラム)を意味する。
         # 階層列(ツリーカラム)のオプションを設定。
         # width : 幅の設定
